@@ -19,3 +19,7 @@ echo
 echo "Say hello to  🌴 $DID_WEB"
 echo
 echo "Follow these instructions https://or13.github.io/didme.me/#using-github-pages"
+echo
+echo "After deployment succeeds click this link:"
+echo
+echo "https://didme.me/$DID_WEB"
