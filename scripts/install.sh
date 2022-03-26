@@ -5,7 +5,7 @@ echo
 DID_MEME=$1
 curl -s https://didme.me/api/$DID_MEME | jq '.' > parent.json
 ID=$(cat ./parent.json | jq -r '.didDocument.id | split(":")[2]')
-USERNAME=$(gh repo view --json url | jq '.url | split("/")[3]')
+USERNAME=$(gh repo view --json url | jq -r  '.url | split("/")[3]')
 DID_WEB="did:web:$USERNAME.github.io:memes:$ID"
 mkdir -p ./docs/memes/$ID
 mv ./parent.json ./docs/memes/$ID/parent.json
