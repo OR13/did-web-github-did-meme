@@ -18,4 +18,4 @@ echo "Say goodbye to 🔥 $DID_MEME"
 echo
 echo "Say hello to  🌴 $DID_WEB"
 echo
-echo "Learn more at https://or13.github.io/didme.me"
+echo "Follow these instructions https://or13.github.io/didme.me/#using-github-pages"
