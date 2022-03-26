@@ -12,7 +12,7 @@ mv ./parent.json ./docs/memes/$ID/parent.json
 cat ./docs/memes/$ID/parent.json | jq '.didDocument' | sed "s/$DID_MEME/$DID_WEB/g"  > ./docs/memes/$ID/did.json
 git add ./docs
 git commit -m ":rocket:"
-git push
+git push origin main
 echo
 echo "Say goodbye to 🔥 $DID_MEME"
 echo
