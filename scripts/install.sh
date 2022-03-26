@@ -10,8 +10,11 @@ DID_WEB="did:web:$USERNAME.github.io:memes:$ID"
 mkdir -p ./docs/memes/$ID
 mv ./parent.json ./docs/memes/$ID/parent.json
 cat ./docs/memes/$ID/parent.json | jq '.didDocument' | sed "s/$DID_MEME/$DID_WEB/g"  > ./docs/memes/$ID/did.json
+git add ./docs
+git commit -m ":rocket:"
+git push
 echo
-echo "1. say buh bye to 🔥 $DID_MEME"
+echo "Say goodbye to 🔥 $DID_MEME"
 echo
-echo "2. say wassup to  🌴 $DID_WEB"
+echo "Say hello to  🌴 $DID_WEB"
 echo
